@@ -1,4 +1,4 @@
-import { login } from "@/service/authServices";
+import { login } from "@/services/authServices";
 import { useQuery } from "@tanstack/react-query";
 
 export const useLogin = () => {

@@ -1,11 +1,9 @@
-"use client";
-
-import { fetchBook } from "@/service/bookServices";
+import { fetchBooks } from "@/services/bookServices";
 import { useQuery } from "@tanstack/react-query";
 
-export const useFetchBook = () => {
+export const useFetchBooks = () => {
   return useQuery({
-    queryFn: () => fetchBook(),
-    queryKey: ["list-book"],
+    queryKey: ["list_book"],
+    queryFn: fetchBooks,
   });
 };

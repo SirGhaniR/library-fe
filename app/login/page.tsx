@@ -21,7 +21,7 @@ const Login = () => {
         <h2 className="mb-8 text-center text-2xl font-semibold text-gray-800">
           Login
         </h2>
-        <form>
+        <form id="loginForm">
           {/* Email */}
           <div className="mb-6">
             <label

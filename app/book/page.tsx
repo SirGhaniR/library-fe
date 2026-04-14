@@ -1,11 +1,11 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
-import { useFetchBook } from "./-mutation";
+import { useFetchBooks } from "./-mutation";
 import { BookType } from "./type";
 
 const Book = () => {
-  const { data, isLoading, isSuccess } = useFetchBook();
+  const { data, isLoading, isSuccess } = useFetchBooks();
 
   console.log(`INI DATA VARIABLE ${JSON.stringify(data?.data)}`);
 

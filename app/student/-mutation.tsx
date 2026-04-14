@@ -1,4 +1,4 @@
-import { fetchStudents } from "@/service/studentServices";
+import { fetchStudents } from "@/services/studentServices";
 import { useQuery } from "@tanstack/react-query";
 
 export const useFetchStudents = () => {
